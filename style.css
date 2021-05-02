@@ -22,15 +22,23 @@
   font-style: normal;
 }
 body {
-  background-color: white;
+  background:linear-gradient(to left , #110101 , #efefef) ;
   color: #777777;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
 }
-.main {
-  background-color: white;
+span#player{
+  font-size: 24px;
+  color: rgb(17, 22, 26);
 }
+span#opponent{
+  font-size: 24px;
+  color: white;
+}
+/* .main {
+  background-color: white;
+} */
 .header {
   background-color: #efefef;
   border: 1px solid #efefef;
@@ -38,7 +46,9 @@ body {
 }
 .header h1 {
   color: #ff7729;
-}
+  text-align: center;
+  font-weight: bold;
+  }
 
 h1 span.rock {
   font-family: ""mission_scriptregular", Georgia, Times, "Times New Roman", serif";
@@ -75,7 +85,8 @@ h1 span.scissors {
 button.play {
   border-radius: 10px;
   border: 4px solid white;
-}
+  }
+  
 button.play.rock {
   background: #efefef url("https://dl.dropboxusercontent.com/u/6152966/rock.png") no-repeat;
   background-size: 175px 175px;
@@ -112,8 +123,9 @@ p {
 }
 .scorebox {
   background-color: #efefef;
-  border: 4px solid #efefef;
+  border: 3px solid #160c0c;
   border-radius: 10px;
+  border-style: dashed;
 }
 .scorebox h2 {
   color: #c228c7;
@@ -154,15 +166,15 @@ body {
   margin: 0;
   padding: 0;
 }
-.header {
+/* .header {
   position: relative;
   width: 100%;
   height: 110px;
   height: 11rem;
-}
-.header h1 {
+} */
+/* .header h1 {
   margin: 20px auto;
-}
+} */
 .main {
   width: 100%;
   min-height: 350px;
@@ -181,7 +193,7 @@ body {
   padding: 0 0 5px 0;
 }
 .container {
-  position: relative;
+  position:-webkit-sticky;
   width: 960px;
   width: 96rem;
   margin: 0 auto;
@@ -269,7 +281,7 @@ button#reset {
   line-height: 1em;
   float: right;
   margin-right: 105px;
-  border: 0;
+  border-color: 1px solid black ;
 }
 .scorebox {
   box-sizing: border-box;
